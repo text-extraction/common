@@ -46,7 +46,7 @@
     <repository>
       <id>repo</id>
       <name>Temporary Staging Repository</name>
-      <url>file://${project.build.localRepository}</url>
+      <url>file://${project.build.localRepo}</url>
     </repository>
   </distributionManagement>
 
@@ -58,7 +58,7 @@
         <version>2.8.2</version>
         <configuration>
           <altDeploymentRepository>
-            repo::default::file://${project.build.localRepository}
+            repo::default::file://${project.build.localRepo}
           </altDeploymentRepository>
         </configuration>
       </plugin>
@@ -70,7 +70,7 @@
         <version>0.11</version>
         <configuration>
           <branch>${github.site.branch}</branch>
-          <outputDirectory>${project.build.localRepository}</outputDirectory>
+          <outputDirectory>${project.build.localRepo}</outputDirectory>
           <message>${github.site.message}</message>
           <noJekyll>true</noJekyll>
         </configuration>

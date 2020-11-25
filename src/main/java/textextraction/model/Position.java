@@ -4,8 +4,8 @@ import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 
 /**
- * A position in a page of a document, that is: a pair of a page and a bounding box (represented
- * by a rectangle).
+ * A position in a page of a document, that is: a pair of a page and a bounding box (represented by
+ * a rectangle).
  * 
  * @author Claudius Korzen
  */
