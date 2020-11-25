@@ -1,4 +1,4 @@
-package textextraction.model;
+package textextraction.common.models;
 
 import java.util.Arrays;
 import java.util.Collection;

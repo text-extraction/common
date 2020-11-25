@@ -1,4 +1,4 @@
-package textextraction.model;
+package textextraction.common.models;
 
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
@@ -28,11 +28,6 @@ public class Character extends Element {
    * The color of this character.
    */
   protected Color color;
-
-  /**
-   * The rank of this character in the extraction order of elements.
-   */
-  protected int extractionRank;
 
   // ==============================================================================================
 
@@ -114,25 +109,7 @@ public class Character extends Element {
     this.color = color;
   }
 
-  // ==============================================================================================
 
-  /**
-   * Returns the rank of this character in the extraction order of document elements.
-   * 
-   * @return The rank of this character in the extraction order of document elements.
-   */
-  public int getExtractionRank() {
-    return this.extractionRank;
-  }
-
-  /**
-   * Sets the rank of this character in the extraction order of document elements.
-   * 
-   * @param rank The rank of this character in the extraction order of document elements.
-   */
-  public void setExtractionRank(int rank) {
-    this.extractionRank = rank;
-  }
 
   // ==============================================================================================
 
@@ -153,7 +130,6 @@ public class Character extends Element {
       builder.append(getPosition(), otherCharacter.getPosition());
       builder.append(getFontFace(), otherCharacter.getFontFace());
       builder.append(getColor(), otherCharacter.getColor());
-      builder.append(getExtractionRank(), otherCharacter.getExtractionRank());
 
       return builder.isEquals();
     }
@@ -167,7 +143,6 @@ public class Character extends Element {
     builder.append(getPosition());
     builder.append(getFontFace());
     builder.append(getColor());
-    builder.append(getExtractionRank());
     return builder.hashCode();
   }
 }

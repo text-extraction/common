@@ -1,4 +1,4 @@
-package textextraction.model;
+package textextraction.common.models;
 
 import java.util.Arrays;
 import org.apache.commons.lang3.builder.EqualsBuilder;
@@ -16,7 +16,7 @@ public class Color extends Resource {
   protected String name;
 
   /**
-   * The RGB values of this color, each value in the range [0, 255].
+   * The RGB values of this color, each value in the range [0,255].
    */
   protected int[] rgb;
 
@@ -32,7 +32,7 @@ public class Color extends Resource {
   /**
    * Creates a new color from the given RGB values.
    * 
-   * @param rgb The RGB values given as an array of three int values, each in the range [0, 255].
+   * @param rgb The RGB values given as an array of three int values, each in the range [0,255].
    */
   public Color(int[] rgb) {
     this.rgb = rgb;
@@ -41,9 +41,9 @@ public class Color extends Resource {
   /**
    * Creates a new color from the given RGB values.
    * 
-   * @param r The R value, given as an int in range [0, 255].
-   * @param g The G value, given as an int in range [0, 255].
-   * @param b The B value, given as an int in range [0, 255].
+   * @param r The R value, given as an int in range [0,255].
+   * @param g The G value, given as an int in range [0,255].
+   * @param b The B value, given as an int in range [0,255].
    */
   public Color(int r, int g, int b) {
     this();
@@ -77,7 +77,7 @@ public class Color extends Resource {
   /**
    * Returns the RGB values of this color.
    * 
-   * @return The RGB values as an array of three int values, each in the range [0, 255].
+   * @return The RGB values as an array of three int values, each in the range [0,255].
    */
   public int[] getRGB() {
     return this.rgb;
@@ -86,7 +86,7 @@ public class Color extends Resource {
   /**
    * Sets the RGB values of this color.
    * 
-   * @param rgb The RGB values given as an array of three int values, each in the range [0, 255].
+   * @param rgb The RGB values given as an array of three int values, each in the range [0,255].
    */
   public void setRGB(final int[] rgb) {
     this.rgb = rgb;
@@ -95,9 +95,9 @@ public class Color extends Resource {
   /**
    * Sets the RGB values of this color.
    * 
-   * @param r The R value, given as an int in range [0, 255].
-   * @param g The G value, given as an int in range [0, 255].
-   * @param b The B value, given as an int in range [0, 255].
+   * @param r The R value, given as an int in range [0,255].
+   * @param g The G value, given as an int in range [0,255].
+   * @param b The B value, given as an int in range [0,255].
    */
   public void setRGB(int r, int g, int b) {
     this.rgb[0] = r;

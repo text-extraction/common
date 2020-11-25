@@ -1,4 +1,4 @@
-package textextraction.model;
+package textextraction.common.models;
 
 import java.io.File;
 import java.nio.file.Path;
@@ -15,7 +15,7 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
  */
 public class Document {
   /**
-   * The path to the document on disk.
+   * The path to the file on disk.
    */
   protected Path path;
 
@@ -29,7 +29,7 @@ public class Document {
   /**
    * Creates a new document.
    * 
-   * @param path The path to the document on disk.
+   * @param path The path to the file on disk.
    */
   public Document(String path) {
     this(Paths.get(path));
@@ -38,7 +38,7 @@ public class Document {
   /**
    * Creates a new document.
    * 
-   * @param path The path to the document on disk.
+   * @param path The path to the file on disk.
    */
   public Document(File path) {
     this(path.toPath());
@@ -47,7 +47,7 @@ public class Document {
   /**
    * Creates a new document.
    * 
-   * @param path The path to the file.
+   * @param path The path to the file on disk.
    */
   public Document(Path path) {
     this.pages = new ArrayList<>();
@@ -57,18 +57,18 @@ public class Document {
   // ==============================================================================================
 
   /**
-   * Returns the path to the file.
+   * Returns the path to the file on disk.
    * 
-   * @return The path to the file.
+   * @return The path to the file on disk.
    */
   public Path getPath() {
     return this.path;
   }
 
   /**
-   * Sets the path to the file.
+   * Sets the path to the file on disk.
    * 
-   * @param path The path to the file.
+   * @param path The path to the file on disk.
    */
   public void setPath(Path path) {
     this.path = path;
@@ -77,18 +77,18 @@ public class Document {
   // ==============================================================================================
 
   /**
-   * Returns the path to the file.
+   * Returns the path to the file on disk.
    * 
-   * @return The path to the file.
+   * @return The path to the file on disk.
    */
   public File getFile() {
     return this.path != null ? this.path.toFile() : null;
   }
 
   /**
-   * Sets the path to the file.
+   * Sets the path to the file on disk.
    * 
-   * @param file The path to the file.
+   * @param file The path to the file on disk.
    */
   public void setFile(File file) {
     this.path = file != null ? file.toPath() : null;

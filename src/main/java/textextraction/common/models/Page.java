@@ -1,4 +1,4 @@
-package textextraction.model;
+package textextraction.common.models;
 
 import java.util.ArrayList;
 import java.util.List;
