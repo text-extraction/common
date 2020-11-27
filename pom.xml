@@ -14,7 +14,7 @@
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    
+
     <checkstyle.consoleOutput>true</checkstyle.consoleOutput>
     <checkstyle.config.location>./checkstyle_config.xml</checkstyle.config.location>
 
@@ -56,7 +56,9 @@
         <executions>
           <execution>
             <id>checkstyle</id>
-            <goals><goal>checkstyle</goal></goals>
+            <goals>
+              <goal>checkstyle</goal>
+            </goals>
             <phase>prepare-package</phase>
           </execution>
         </executions>
@@ -78,7 +80,9 @@
         </configuration>
         <executions>
           <execution>
-            <goals><goal>site</goal></goals>
+            <goals>
+              <goal>site</goal>
+            </goals>
             <phase>deploy</phase>
           </execution>
         </executions>
