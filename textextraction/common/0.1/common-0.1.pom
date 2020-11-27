@@ -46,15 +46,6 @@
     </dependency>
   </dependencies>
 
-  <!-- Deploy the artifacts to a tmp staging repository before uploading to the Github repo. -->
-  <distributionManagement>
-    <repository>
-      <id>repo</id>
-      <name>Temporary Staging Repository</name>
-      <url>file://${project.build.localRepo}</url>
-    </repository>
-  </distributionManagement>
-
   <build>
     <plugins>
       <!-- Configure the checkstyle plugin. -->
