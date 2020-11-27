@@ -12,12 +12,12 @@ public class Point {
   /**
    * The x-coordinate of this point.
    */
-  protected float x;
+  protected float pointX;
 
   /**
    * The y-coordinate of this point.
    */
-  protected float y;
+  protected float pointY;
 
   /**
    * Creates a new point with coordinates (0, 0).
@@ -55,7 +55,7 @@ public class Point {
    * @return The x-coordinate of this point.
    */
   public float getX() {
-    return this.x;
+    return this.pointX;
   }
 
   /**
@@ -64,7 +64,7 @@ public class Point {
    * @param x The x-coordinate of this point.
    */
   public void setX(float x) {
-    this.x = x;
+    this.pointX = x;
   }
 
   // ==============================================================================================
@@ -75,7 +75,7 @@ public class Point {
    * @return The y-coordinate of this point.
    */
   public float getY() {
-    return this.y;
+    return this.pointY;
   }
 
   /**
@@ -84,7 +84,7 @@ public class Point {
    * @param y The y-coordinate of this point.
    */
   public void setY(float y) {
-    this.y = y;
+    this.pointY = y;
   }
 
   // ==============================================================================================

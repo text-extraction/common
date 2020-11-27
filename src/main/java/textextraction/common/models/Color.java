@@ -79,7 +79,7 @@ public class Color extends Resource {
    * 
    * @return The RGB values as an array of three int values, each in the range [0,255].
    */
-  public int[] getRGB() {
+  public int[] getRgb() {
     return this.rgb;
   }
 
@@ -88,7 +88,7 @@ public class Color extends Resource {
    * 
    * @param rgb The RGB values given as an array of three int values, each in the range [0,255].
    */
-  public void setRGB(final int[] rgb) {
+  public void setRgb(final int[] rgb) {
     this.rgb = rgb;
   }
 
@@ -99,7 +99,7 @@ public class Color extends Resource {
    * @param g The G value, given as an int in range [0,255].
    * @param b The B value, given as an int in range [0,255].
    */
-  public void setRGB(int r, int g, int b) {
+  public void setRgb(int r, int g, int b) {
     this.rgb[0] = r;
     this.rgb[1] = g;
     this.rgb[2] = b;
@@ -121,7 +121,7 @@ public class Color extends Resource {
 
       EqualsBuilder builder = new EqualsBuilder();
       builder.append(getName(), otherColor.getName());
-      builder.append(getRGB(), otherColor.getRGB());
+      builder.append(getRgb(), otherColor.getRgb());
 
       return builder.isEquals();
     }
@@ -132,7 +132,7 @@ public class Color extends Resource {
   public int hashCode() {
     HashCodeBuilder builder = new HashCodeBuilder();
     builder.append(getName());
-    builder.append(getRGB());
+    builder.append(getRgb());
     return builder.hashCode();
   }
 }

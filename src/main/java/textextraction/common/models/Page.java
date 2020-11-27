@@ -180,7 +180,7 @@ public class Page {
   /**
    * Adds the given figure to this page.
    * 
-   * @param figures The figure to add.
+   * @param figure The figure to add.
    */
   public void addFigure(Figure figure) {
     this.figures.add(figure);

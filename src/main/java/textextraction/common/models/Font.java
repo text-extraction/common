@@ -36,9 +36,9 @@ public class Font extends Resource {
   }
 
   /**
-   * Sets the boolean flag that indicates whether or not this font is a bold-faced font.
+   * Sets the name of this font.
    * 
-   * @param isBold The boolean flag that indicates whether or not this font is a bold-faced font.
+   * @param name The name of this font.
    */
   public void setName(String name) {
     this.name = name;
