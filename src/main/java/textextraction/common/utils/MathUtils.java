@@ -12,16 +12,14 @@ public class MathUtils {
    * @param float1 The first float to compare.
    * @param float2 The second float to compare.
    * 
-   * @return True, if the two given float number are almost equal, with respect to a tolerance of
-   *         0.001.
+   * @return True, if the two floats are almost equal, with respect to a tolerance of 0.001.
    */
   public static boolean isEqual(float float1, float float2) {
     return isEqual(float1, float2, 0.001f);
   }
 
   /**
-   * Returns true, if the two given float number are almost equal (with respect to the given
-   * tolerance).
+   * Returns true, if the two given floats are almost equal (with respect to the given tolerance).
    * 
    * @param f1        The first float to compare.
    * @param f2        The second float to compare.
@@ -34,8 +32,7 @@ public class MathUtils {
   }
 
   /**
-   * Returns true, if the first given float is larger (with respect to the given tolerance) than the
-   * second given float.
+   * Returns true, if the first float is larger (wrt the given tolerance) than the second float.
    * 
    * @param f1        The first float to compare.
    * @param f2        The second float to compare.
