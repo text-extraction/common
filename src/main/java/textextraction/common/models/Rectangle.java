@@ -500,7 +500,7 @@ public class Rectangle {
 
   @Override
   public String toString() {
-    return "Rectangle(" + getMinX() + "," + getMinY() + "," + getMaxX() + "," + getMaxY() + ")";
+    return "Rect(" + getMinX() + "," + getMinY() + "," + getMaxX() + "," + getMaxY() + ")";
   }
 
   // ==============================================================================================

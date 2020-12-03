@@ -111,7 +111,7 @@ public class Position {
 
   @Override
   public String toString() {
-    return "Position(page: " + getPage() + ", rect: " + getRectangle() + ")";
+    return "Pos(p: " + page.getPageNumber() + ", bb: " + getRectangle() + ")";
   }
 
   // ==============================================================================================

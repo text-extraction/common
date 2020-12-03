@@ -89,8 +89,7 @@ public class Font extends Resource {
 
   @Override
   public String toString() {
-    return "Font(" + this.name + ", id: " + this.id + ", isBold: " + this.isBold + ", isItalic: "
-            + this.isItalic() + ")";
+    return "Font(" + this.name + ", bold: " + this.isBold + ", italic: " + this.isItalic() + ")";
   }
 
   // ==============================================================================================

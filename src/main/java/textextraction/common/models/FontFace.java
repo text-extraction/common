@@ -76,7 +76,7 @@ public class FontFace {
 
   @Override
   public String toString() {
-    return "FontFace(" + this.font + ", " + this.fontSize + ")";
+    return "FontFace(f: " + this.font + ", fs: " + this.fontSize + ")";
   }
 
   // ==============================================================================================

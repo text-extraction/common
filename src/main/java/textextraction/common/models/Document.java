@@ -152,7 +152,7 @@ public class Document {
 
   @Override
   public String toString() {
-    return "Document(" + this.path + ")";
+    return "Doc(" + this.path + ")";
   }
 
   // ==============================================================================================

@@ -38,7 +38,7 @@ public class Figure extends Element {
 
   @Override
   public String toString() {
-    return "Figure(pos: " + getPosition() + ")";
+    return "Fig(p: " + getPosition() + ")";
   }
 
   // ==============================================================================================
